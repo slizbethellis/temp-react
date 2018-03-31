@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import { Nav, NavBtn, NavItem, NavLink, NavList,  } from "./components/Nav";
+import { NavBtn } from "./components/Nav";
 import "./App.css"
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <div>
         <NavBtn />
-        <Nav>
+        {/* <Nav>
           <NavList>
             <NavItem>
               <NavLink href="#page-top">Home</NavLink>
@@ -28,7 +33,7 @@ class App extends Component {
               <NavLink href="https://www.dropbox.com/s/ji8n9wwfrrzf32u/Sarah%20Ellis.pdf?dl=0">Resume</NavLink>
             </NavItem>
           </NavList>
-        </Nav>
+        </Nav> */}
       </div>
     );
   }
