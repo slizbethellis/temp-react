@@ -1,23 +1,40 @@
 /* Side Menu */
 .sidebar-enter {
-  right: 250px;
+  position: fixed;
+  right: 0;
   width: 250px;
+  height: 100%;
+  z-index: 2;
+  transform: translateX(250px);
 }
 
-.sidebar-enter.sidebar-enter-active {
+.sidebar-enter-active {
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  transform: translateX(0);
 }
 
-.sidebar-leave {
+.sidebar-enter-done {
+  position: fixed;
   right: 0;
   width: 250px;
+  height: 100%;
+  z-index: 2;
 }
 
-.sidebar-leave.sidebar-leave-active {
+.sidebar-exit {
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+  transform: translateX(0);
+}
+
+.sidebar-exit-active {
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -27,17 +44,6 @@
 }
 
 #sidebar-wrapper {
-  position: fixed;
-  z-index: 2;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  transform: translateX(250px);
   background: #313455;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -58,25 +64,15 @@
   padding: 15px;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav li.sidebar-nav-item a:hover {
   text-decoration: none;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav li.sidebar-nav-item a:active,
+.sidebar-nav li.sidebar-nav-item a:focus {
   text-decoration: none;
-}
-
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
 }
 
 .menu-toggle {
@@ -85,15 +81,22 @@
   top: 15px;
   width: 50px;
   height: 50px;
+  font-size: 1.1rem;
   text-align: center;
   color: #fff;
   background: rgba(52, 58, 64, 0.5);
-  line-height: 40px;
+  line-height: 15px;
   z-index: 999;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .menu-toggle:focus, .menu-toggle:hover {
   color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .menu-toggle:hover {
