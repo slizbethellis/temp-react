@@ -1,7 +1,7 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-const Animate = ({shouldShow, timeout, classNames, children}) => {
+export const HorizSlide = ({shouldShow, timeout, classNames, children}) => {
   return (
     <CSSTransition
       timeout={timeout}
@@ -11,5 +11,3 @@ const Animate = ({shouldShow, timeout, classNames, children}) => {
     </CSSTransition>
   );
 }
-
-export default Animate;

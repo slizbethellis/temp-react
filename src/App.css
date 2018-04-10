@@ -12,20 +12,6 @@ body {
   padding: 1.25rem 2.5rem;
 }
 
-.content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-}
-
-.content-section-heading h2 {
-  font-size: 3rem;
-}
-
-.content-section-heading h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
 h1,
 h2,
 h3,
@@ -45,21 +31,6 @@ h6 {
 
 .t-light {
   color: #e3e0d9;
-}
-
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
 }
 
 .scroll-to-top {
@@ -85,10 +56,6 @@ h6 {
 
 .scroll-to-top i {
   font-weight: 800;
-}
-
-#skills {
-  background-color: #f4763c;
 }
 
 .skill-icon {
