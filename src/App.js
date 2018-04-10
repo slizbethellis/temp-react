@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, NavBtn, NavItem, NavLink, NavList } from './components/Nav';
+import Masthead from './components/Masthead';
 import Animate from './components/Animate';
 import { FaBars, FaClose } from 'react-icons/lib/fa';
 import "./App.css";
@@ -56,6 +57,14 @@ class App extends Component {
             </NavList>
           </Nav>
         </Animate>
+
+        <Masthead>
+          <h1 class="mb-1">Sarah Ellis</h1>
+          <h3 class="mb-5">
+            <em>Full Stack Web Developer</em>
+          </h3>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn More About Me</a>
+        </Masthead>
       </div>
     );
   }
