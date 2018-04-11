@@ -13,11 +13,10 @@
   display: block;
   height: 4rem;
   width: 4rem;
-  line-height: 4.3rem;
+  line-height: 3.7rem;
   font-size: 1.5rem;
   background-color: #e0487b;
-  margin-top: 2.5rem;
-  transition: background-color 0.15s ease-in-out;
+  margin: 2.5rem 0.2rem 1.9rem 0.2rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -32,4 +31,9 @@ a {
 
 a:hover, a:focus, a:active {
   color: #9e3560;
+}
+
+.headshot {
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }

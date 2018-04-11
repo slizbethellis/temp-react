@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import { Nav, NavBtn, NavItem, NavList } from './components/Nav';
-import Masthead from './components/Masthead';
+import { Animate } from './components/Animate';
+import { ExtLink, Footer, TinyText } from './components/Footer';
 import { Col, Container, ContentHeading, Row, Section } from './components/Grid';
-import { HorizSlide } from './components/Animate';
-import { BulletList, BulletListItem } from './components/List';
+import { BulletList, BulletListItem, InlineList, InlineListItem } from './components/List';
+import Masthead from './components/Masthead';
+import { Nav, NavBtn, NavItem, NavList } from './components/Nav';
 import NavLink from './components/NavLink';
-import { IconCircle } from './components/RoundObjects';
+import { ButtonCircle, Headshot, IconCircle } from './components/RoundObjects';
 import ScrollBtn from './components/ScrollBtn';
 import ScrolltoTop from './components/ScrolltoTop';
-import { FaBars, FaClose, FaDesktop, FaGraduationCap, FaServer } from 'react-icons/lib/fa';
+import { FaBars, FaClose, FaDesktop, FaEnvelope, FaGithub, FaGraduationCap, FaLinkedin, FaServer } from 'react-icons/lib/fa';
 import "./App.css";
 
 class App extends Component {
@@ -39,7 +40,7 @@ class App extends Component {
         </NavBtn>
 
         {/* Sliding NavBar */}
-        <HorizSlide
+        <Animate
           timeout={400}
           classNames="sidebar"
           shouldShow={this.state.isOpen}>
@@ -65,7 +66,7 @@ class App extends Component {
               </NavItem>
             </NavList>
           </Nav>
-        </HorizSlide>
+        </Animate>
 
         {/* Masthead */}
         <Masthead>
@@ -174,7 +175,42 @@ class App extends Component {
 
         {/* Footer/Contact */}
         <Element name="contact">
-
+          <Footer>
+            <Container>
+              <ContentHeading>
+                <h2 className="mb-5">Contact</h2>
+                <Col size="lg-3 md-3" margin="mx-auto">
+                  <Headshot src="headshot.png" alt="Sarah Ellis" />
+                  <h4>Sarah Ellis</h4>
+                  <p className="lead">Full Stack Web Developer</p>
+                </Col>
+              </ContentHeading>
+              <Row>
+                <Col size="lg-12">
+                  <InlineList>
+                    <InlineListItem>
+                      <ButtonCircle href="https://github.com/slizbethellis/">
+                        <FaGithub />
+                      </ButtonCircle>
+                    </InlineListItem>
+                    <InlineListItem>
+                      <ButtonCircle href="https://www.linkedin.com/in/slizbethellis/">
+                        <FaLinkedin />
+                      </ButtonCircle>
+                    </InlineListItem>
+                    <InlineListItem>
+                      <ButtonCircle href="mailto:slizbethellis@gmail.com">
+                        <FaEnvelope />
+                      </ButtonCircle>
+                    </InlineListItem>
+                  </InlineList>
+                </Col>
+              </Row>
+              <TinyText>Copyright &copy; Sarah Ellis 2018</TinyText>
+              <TinyText>This page is built from React.js components I made based on a <ExtLink href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Start Bootstrap</ExtLink> template.</TinyText>
+              <TinyText>And do take a look at my <ExtLink href="https://github.com/slizbethellis/temp-react">GitHub repo</ExtLink> for this portfolio.</TinyText>
+            </Container>
+          </Footer>
         </Element>
 
         {/* Scroll to Top Button */}
