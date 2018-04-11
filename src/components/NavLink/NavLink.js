@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
-import './ScrollBtn.css';
 
-class ScrollBtn extends Component {
+class NavLink extends Component {
   constructor(props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
@@ -37,8 +36,7 @@ class ScrollBtn extends Component {
   
   render() {
     return (
-      <Link className={`btn btn-${this.props.color} btn-xl`}
-        activeClass="active"
+      <Link activeClass="active"
         to={`${this.props.to}`}
         onClick={() => this.scrollTo(this.props.to)}
       >
@@ -48,4 +46,4 @@ class ScrollBtn extends Component {
   }
 }
 
-export default ScrollBtn;
+export default NavLink;
