@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Element } from 'react-scroll';
 import { Animate } from './components/Animate';
 import { ExtLink, Footer, TinyText } from './components/Footer';
 import { Col, Container, ContentHeading, Row, Section } from './components/Grid';
@@ -17,9 +17,26 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      showBtn: false
     }
     this.update = this.update.bind(this);
+  }
+
+  componentDidMount() {
+    this._setCurrentSection();
+    window.addEventListener('scroll', this._setCurrentSection);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._setCurrentSection);
+  }
+
+  _setCurrentSection = () => {
+    let showBtn = this.state.showBtn;
+    if (window.pageYOffset > 100) { showBtn = true; }
+    else { showBtn = false; }
+    this.setState({ showBtn: showBtn });
   }
 
   update = event => {
@@ -214,7 +231,12 @@ class App extends Component {
         </Element>
 
         {/* Scroll to Top Button */}
-        <ScrolltoTop />
+        <Animate
+          timeout={1000}
+          classNames="btnFade"
+          shouldShow={this.state.showBtn}>
+          <ScrolltoTop />
+        </Animate>
       </div>
     );
   }

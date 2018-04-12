@@ -4,6 +4,7 @@ import { FaAngleUp } from 'react-icons/lib/fa';
 import './ScrolltoTop.css';
 
 class ScrolltoTop extends Component {
+
   constructor(props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
@@ -19,13 +20,15 @@ class ScrolltoTop extends Component {
     });
   }
 
+  
+
   scrollToTop() {
     scroll.scrollToTop();
   }
 
   render() {
     return (
-      <button {...this.props} className="scroll-to-top rounded" onClick={() => this.scrollToTop()}>
+      <button className="scroll-to-top rounded" onClick={() => this.scrollToTop()}>
         <FaAngleUp />
       </button>
     );
