@@ -1,7 +1,3 @@
-.btnFade {
-  display: none;
-}
-
 .btnFade-enter {
   opacity: 0.01;
 }

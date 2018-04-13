@@ -17,26 +17,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
-      showBtn: false
+      isOpen: false
     }
     this.update = this.update.bind(this);
-  }
-
-  componentDidMount() {
-    this._setCurrentSection();
-    window.addEventListener('scroll', this._setCurrentSection);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this._setCurrentSection);
-  }
-
-  _setCurrentSection = () => {
-    let showBtn = this.state.showBtn;
-    if (window.pageYOffset > 100) { showBtn = true; }
-    else { showBtn = false; }
-    this.setState({ showBtn: showBtn });
   }
 
   update = event => {
@@ -231,12 +214,7 @@ class App extends Component {
         </Element>
 
         {/* Scroll to Top Button */}
-        <Animate
-          timeout={1000}
-          classNames="btnFade"
-          shouldShow={this.state.showBtn}>
-          <ScrolltoTop />
-        </Animate>
+        <ScrolltoTop />
       </div>
     );
   }
