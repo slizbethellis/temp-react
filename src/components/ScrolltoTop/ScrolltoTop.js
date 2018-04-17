@@ -5,7 +5,6 @@ import { Animate } from '../Animate';
 import './ScrolltoTop.css';
 
 class ScrolltoTop extends Component {
-
   constructor(props) {
     super(props);
     this.state = {

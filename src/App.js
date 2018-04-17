@@ -7,6 +7,7 @@ import { BulletList, BulletListItem, InlineList, InlineListItem } from './compon
 import Masthead from './components/Masthead';
 import { Nav, NavBtn, NavItem, NavList } from './components/Nav';
 import NavLink from './components/NavLink';
+import PortfolioItem from './components/Portfolio';
 import { ButtonCircle, Headshot, IconCircle } from './components/RoundObjects';
 import ScrollBtn from './components/ScrollBtn';
 import ScrolltoTop from './components/ScrolltoTop';
@@ -165,8 +166,76 @@ class App extends Component {
                 <h3 className="text-secondary mb-0">Portfolio</h3>
                 <h2 className="mb-5 t-dark">Recent Projects</h2>
               </ContentHeading>
-              <Row>
-
+              <Row gutters="no-gutters">
+                <PortfolioItem projectTitle="The Quizard of Ahhhs (group project)"
+                  github="https://github.com/jennbono/quizard-of-ahhhs"
+                  website="https://quizard-of-ahhhs.herokuapp.com/"
+                  technologies="Full Stack: React.js, MongoDB, Mongoose, MaterialUI, timers"
+                  description="Timed quiz app drawing from an api, with logins and leaderboards"
+                  img="/img/quizard.png"
+                  imgAlt="The Quizard of Ahhhs (screenshot)" />
+                <PortfolioItem projectTitle="NYT Archive Search"
+                  github="https://github.com/slizbethellis/nyt-react"
+                  website="https://arcane-woodland-54131.herokuapp.com/"
+                  technologies="Full Stack: React.js, MongoDB, Mongoose"
+                  description="Searches the NYT archives and allows users to save articles"
+                  img="/img/nyt-react.png"
+                  imgAlt="NYT Archive Search (screenshot)" />
+                <PortfolioItem projectTitle="mongo-technica"
+                  github="https://github.com/slizbethellis/mongo-technica"
+                  website="https://mongo-technica.herokuapp.com/"
+                  technologies="Full Stack: Express.js, MVC, MongoDB, Mongoose"
+                  description="Scrapes articles from Ars Technica and adds them to a Mongo database"
+                  img="/img/mongo-technica.png"
+                  imgAlt="mongo-technica (screenshot)" />
+                <PortfolioItem projectTitle="Trail Mix (group project)"
+                  github="https://github.com/slizbethellis/trail-mix"
+                  website="https://shrouded-beach-16284.herokuapp.com/"
+                  technologies="Full Stack: Express.js, MVC, MySQL, Sequelize, okta"
+                  description="Choose-your-own-adventure game themed around food"
+                  img="/img/trail-mix.png"
+                  imgAlt="Trail Mix (screenshot)" />
+                <PortfolioItem projectTitle="Pasta Burger, the Sequel"
+                  github="https://github.com/slizbethellis/Pasta-Burger-sequel"
+                  website="https://serene-lake-98068.herokuapp.com/"
+                  technologies="Full Stack: Express.js, MVC, MySQL, Sequelize"
+                  description="Restaurant app that lets users pick unusual burgers they'd like to eat"
+                  img="/img/pasta-burger-sequel.png"
+                  imgAlt="Pasta Burger, the Sequel (screenshot)" />
+                <PortfolioItem projectTitle="Friend Finder"
+                  github="https://github.com/slizbethellis/Friend-Finder"
+                  website="https://evening-waters-23864.herokuapp.com/"
+                  technologies="Full Stack: Express.js, back end logic"
+                  description="Compatibility quiz that matches users"
+                  img="/img/friend-finder.png"
+                  imgAlt="Friend Finder (screenshot)" />
+                <PortfolioItem projectTitle="Bamazon"
+                  github="https://github.com/slizbethellis/Bamazon"
+                  technologies="Command Line: Node.js, MySQL"
+                  description="Command line 'commerce' application with customer and manager interfaces"
+                  img="/img/bamazon.png"
+                  imgAlt="Bamazon" />
+                  <PortfolioItem projectTitle="Across the Streams (group project)"
+                  github="https://github.com/markverbeck/across-the-streams"
+                  website="https://markverbeck.github.io/across-the-streams"
+                  technologies="Front End: Firebase, Firebase OAuth, APIs"
+                  description="Save TV shows and find where to watch them"
+                  img="/img/across-the-streams.png"
+                  imgAlt="Across the Streams (screenshot)" />
+                  <PortfolioItem projectTitle="Dalek Trivia Game"
+                  github="https://github.com/slizbethellis/TriviaGame"
+                  website="https://slizbethellis.github.io/TriviaGame/"
+                  technologies="Front End: jQuery, timers (Warning: contains sound effects)"
+                  description="Trivia game with timers and custom questions"
+                  img="/img/dalek-trivia-game.png"
+                  imgAlt="Dalek Trivia Game (screenshot)" />
+                  <PortfolioItem projectTitle="Hangman: Sheep Breeds Edition"
+                  github="https://github.com/slizbethellis/Hangman-Game"
+                  website="https://slizbethellis.github.io/Hangman-Game/"
+                  technologies="Front End: JavaScript logic, no jQuery"
+                  description="Browser game of hangman with sheep-themed words"
+                  img="/img/hangman.png"
+                  imgAlt="Hangman: Sheep Breeds Edition (screenshot)" />
               </Row>
             </Container>
 
@@ -180,7 +249,7 @@ class App extends Component {
               <ContentHeading>
                 <h2 className="mb-5">Contact</h2>
                 <Col size="lg-3 md-3" margin="mx-auto">
-                  <Headshot src="headshot.png" alt="Sarah Ellis" />
+                  <Headshot src="/img/headshot.png" alt="Sarah Ellis" />
                   <h4>Sarah Ellis</h4>
                   <p className="lead">Full Stack Web Developer</p>
                 </Col>

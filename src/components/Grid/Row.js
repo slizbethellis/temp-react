@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Row = ({ fluid, children }) =>
-  <div className={`row${fluid ? "-fluid" : ""}`}>
+export const Row = ({ fluid, gutters, children }) =>
+  <div className={`row${fluid ? "-fluid" : ""} ${gutters}`}>
     {children}
   </div>;
