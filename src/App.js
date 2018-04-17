@@ -238,7 +238,6 @@ class App extends Component {
                   imgAlt="Hangman: Sheep Breeds Edition (screenshot)" />
               </Row>
             </Container>
-
           </Section>
         </Element>
 
