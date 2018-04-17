@@ -21,7 +21,11 @@
 }
 
 .btn-outline-light {
-  margin: 0 1.5rem 1.5rem 0;
+  margin: auto 1.5rem auto auto;
+}
+
+.btn-box {
+  height: 3.7rem;
 }
 
 .portfolio-item {
@@ -64,7 +68,6 @@
     margin: 0;
   }
   .portfolio-item .caption {
-    margin: 0;
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
