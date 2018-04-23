@@ -1,27 +1,13 @@
-.btnsFade-enter {
-  opacity: 0.01;
-}
-
-.btnsFade-enter-active {
-  opacity: 1;
-  transition: all 0.25s ease-in-out 0s;
-}
-
-.btnsFade-exit {
-  opacity: 1;
-}
-
-.btnsFade-exit-active {
-  opacity: 0;
-  transition: all 0.25s ease-in-out 0s;
-}
-
-.btnsFade-exit-done {
-  display: none;
-}
-
 .btn-outline-light {
   margin: auto 1.5rem auto auto;
+}
+
+.btn-outline-light:focus {
+  color: #fff;
+}
+
+.btn:hover:focus {
+  color: #212529;
 }
 
 .btn-box {

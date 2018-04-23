@@ -7,7 +7,7 @@ import { BulletList, BulletListItem, InlineList, InlineListItem } from './compon
 import Masthead from './components/Masthead';
 import { Nav, NavBtn, NavItem, NavList } from './components/Nav';
 import NavLink from './components/NavLink';
-import PortfolioItem from './components/Portfolio';
+import { PortfolioItem } from './components/Portfolio';
 import { ButtonCircle, Headshot, IconCircle } from './components/RoundObjects';
 import ScrollBtn from './components/ScrollBtn';
 import ScrolltoTop from './components/ScrolltoTop';
