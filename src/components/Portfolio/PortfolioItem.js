@@ -23,7 +23,7 @@ class PortfolioItem extends Component {
   render() {
     return (
       <Col size="lg-6">
-        <div className="portfolio-item" onMouseEnter={this.update} onMouseLeave={this.update}>
+        <div className="portfolio-item" onMouseEnter={this.update} onMouseLeave={this.update} onTouchStart={this.update} onTouchEnd={this.update}>
           <span className="caption">
             <span className="caption-content">
               <div className="btn-box">

@@ -26,7 +26,7 @@ class ScrolltoTop extends Component {
     this._setCurrentSection();
     window.addEventListener('scroll', this._setCurrentSection);
   }
-
+ 
   componentWillUnmount() {
     window.removeEventListener('scroll', this._setCurrentSection);
   }
