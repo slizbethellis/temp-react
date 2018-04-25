@@ -18,5 +18,5 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://slizbethellis.github.io/temp-react"
+  "homepage": "https://slizbethellis.github.io/react-portfolio"
 }
