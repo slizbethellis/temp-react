@@ -276,7 +276,7 @@ class App extends Component {
               </Row>
               <TinyText>Copyright &copy; Sarah Ellis 2018</TinyText>
               <TinyText>This page is built from React.js components I made based on a <ExtLink href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Start Bootstrap</ExtLink> template.</TinyText>
-              <TinyText>And do take a look at my <ExtLink href="https://github.com/slizbethellis/temp-react">GitHub repo</ExtLink> for this portfolio.</TinyText>
+              <TinyText>And do take a look at my <ExtLink href="https://github.com/slizbethellis/react-portfolio">GitHub repo</ExtLink> for this portfolio.</TinyText>
             </Container>
           </Footer>
         </Element>
