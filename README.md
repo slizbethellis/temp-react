@@ -1,4 +1,6 @@
-# temp-react
-This repository is to allow me to gradually rebuild my portfolio as a React application. If you want to see what I've got so far, look at https://slizbethellis.github.io/temp-react/
+# React Portfolio
+This repository was started to allow me to work on rebuilding my portfolio in React without disrupting my top-level GitHub page (a.k.a. the portfolio link I share). My goal was to re-render my existing portfolio, a modified [Start Bootstrap](https://startbootstrap.com/template-overviews/stylish-portfolio/) template, in React and keep the same functionality, including the animations from the template. This excercise taught me how to handle animations in React, since it's handled differently from merely setting a few CSS properties and/or using jQuery.
+
+Now that the rebuild is finished, I am using this repository to show the history of the work I did on my React-based portfolio, and because the top-level GitHub page doesn't allow for deployment to the 'gh-pages' branch (how React deployments usually work on GitHub), which means that all React deployments have to be pushed to the master branch. In other words, every 'npm run deploy' replaces the master branch with a new build. So this repository is now a means of keeping my current portfolio code on GitHub, since the [slizbethellis.github.io](https://github.com/slizbethellis/slizbethellis.github.io) repository isn't a good place for it.
 
 Also, I'm really proud of the work I did implementing the scroll-based conditional rendering of the [ScrollToTop button](https://github.com/slizbethellis/temp-react/tree/master/src/components/ScrolltoTop), so take a look at that component.
