@@ -167,6 +167,20 @@ class App extends Component {
                 <h2 className="mb-5 t-dark">Recent Projects</h2>
               </ContentHeading>
               <Row gutters="no-gutters">
+                <PortfolioItem projectTitle="Haloroundmyhead Knits"
+                  github="https://github.com/slizbethellis/test-gatsby-blog"
+                  website="https://www.haloroundmyhead.studio"
+                  technologies="Gatsby (static generator for React), Sass, GraphQL"
+                  description="Blog and pattern portfolio for my craft projects"
+                  img="/img/haloroundmyhead-knits.png"
+                  imgAlt="Haloroundmyhead Knits (screenshot)" />
+                <PortfolioItem projectTitle="React Portfolio"
+                  github="https://github.com/slizbethellis/react-portfolio"
+                  website="https://slizbethellis.github.io/react-portfolio"
+                  technologies="Front End: React.js, React animations, gh-pages"
+                  description="Portfolio template from Start Bootstrap rebuilt in React.js"
+                  img="/img/react-portfolio.png"
+                  imgAlt="React Portfolio (screenshot)" />
                 <PortfolioItem projectTitle="The Quizard of Ahhhs (group project)"
                   github="https://github.com/jennbono/quizard-of-ahhhs"
                   website="https://quizard-of-ahhhs.herokuapp.com/"
