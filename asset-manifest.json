@@ -1,14 +1,16 @@
 {
-  "main.css": "/react-portfolio/static/css/main.eaefcfcb.chunk.css",
-  "main.js": "/react-portfolio/static/js/main.243595fe.chunk.js",
-  "main.js.map": "/react-portfolio/static/js/main.243595fe.chunk.js.map",
-  "static/js/1.80d0fe69.chunk.js": "/react-portfolio/static/js/1.80d0fe69.chunk.js",
-  "static/js/1.80d0fe69.chunk.js.map": "/react-portfolio/static/js/1.80d0fe69.chunk.js.map",
-  "runtime~main.js": "/react-portfolio/static/js/runtime~main.f8926043.js",
-  "runtime~main.js.map": "/react-portfolio/static/js/runtime~main.f8926043.js.map",
-  "static/media/Masthead.css": "/react-portfolio/static/media/portfolio-header.3627dca9.png",
-  "static/css/main.eaefcfcb.chunk.css.map": "/react-portfolio/static/css/main.eaefcfcb.chunk.css.map",
-  "index.html": "/react-portfolio/index.html",
-  "precache-manifest.8b59634e5d708600503a3339a4d4f4ca.js": "/react-portfolio/precache-manifest.8b59634e5d708600503a3339a4d4f4ca.js",
-  "service-worker.js": "/react-portfolio/service-worker.js"
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.7f07140f.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.62f43c97.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.62f43c97.chunk.js.map",
+    "runtime~main.js": "/react-portfolio/static/js/runtime~main.f974a8eb.js",
+    "runtime~main.js.map": "/react-portfolio/static/js/runtime~main.f974a8eb.js.map",
+    "static/js/2.a129bbab.chunk.js": "/react-portfolio/static/js/2.a129bbab.chunk.js",
+    "static/js/2.a129bbab.chunk.js.map": "/react-portfolio/static/js/2.a129bbab.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.a2daee8d3754624727ef19818782fc92.js": "/react-portfolio/precache-manifest.a2daee8d3754624727ef19818782fc92.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.7f07140f.chunk.css.map": "/react-portfolio/static/css/main.7f07140f.chunk.css.map",
+    "static/media/Masthead.css": "/react-portfolio/static/media/portfolio-header.3627dca9.png"
+  }
 }
